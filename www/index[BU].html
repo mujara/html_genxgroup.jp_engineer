@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="●サイトの検索キーワード●" />
+<meta name="description" content="●サイトの検索説明●" />
+<title>●サイトのタイトル●</title>
+<meta property="og:url" content="●ページの URL●" />
+<meta property="og:type" content="●ページの種類●website article" />
+<meta property="og:title" content="●ページの タイトル●" />
+<meta property="og:description" content="●ページの説明文●" />
+<meta property="og:site_name" content="●サイト名●" />
+<meta property="og:image" content="●サムネイル画像のURL●" />
+<meta name="apple-mobile-web-app-title" content="●iOS表示名●" />
+<meta name="author" content="●作者名●" />
+<link rel="apple-touch-icon" href="iphone.png">
+<link rel="stylesheet" href="css/import.css" media="all" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800;900&family=Noto+Sans+JP:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body id="home" class="home is-pageFade">
+<div class="page-transition"></div>
+
+<div id="wrapper">
+	<div class="globalNaviBox">
+		<nav class="globalNavi">
+			<ul class="globalNavi__menu__main">
+					<li><a href="<?php echo home_url(); ?>/entryform">ENTRY</a></li>
+					<li><a href="<?php echo home_url(); ?>/about-company">私たちについて</a></li>
+					<li><a href="<?php echo home_url(); ?>/about-service">事業紹介</a></li>
+					<li><a href="<?php echo home_url(); ?>/about-business">仕事内容</a></li>
+					<li><a href="<?php echo home_url(); ?>/interview">インタビュー</a></li>
+					<li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
+					<li><a href="<?php echo home_url(); ?>/about-recruit">採用情報</a></li>
+			</ul>
+			<ul class="globalNavi__sns">
+					<li><a href="https://twitter.com/fukushimakenki" target="_blank"><img src="img/common/iconTwitter.png" alt="GENXgroupゲンクスグループ Twitter" /></a></li>
+					<li><a href="https://www.facebook.com/fukushimakenki/" target="_blank"><img src="img/common/iconFacebook.png" alt="GENXgroupゲンクスグループ Facebook" /></a></li>
+					<li><a href="https://www.instagram.com/fukushima_kenki/" target="_blank"><img src="img/common/iconInstagram.png" alt="GENXgroupゲンクスグループ Instagram" /></a></li>
+					<li><a href="https://note.com/fukushimakenki/" target="_blank"><img src="img/common/iconNote.png" alt="GENXgroupゲンクスグループ Note" /></a></li>
+			</ul>
+		<!-- /.globalNavi --></nav>
+	<!-- /.globalNaviBox --></div>
+
+	<header id="header" class="clearfix">
+        
+		<div class="header__headBox">
+			<div class="header__siteTitleBox">
+				<h1 class="header__siteTitle"><a href="index.html">
+					<img src="img/common/siteTitle.png" alt="GENXgroupゲンクスグループエンジニア採用サイト" class="--isPC" />
+					<img src="img/common/siteTitleRecruit2024.png" alt="GENXgroupゲンクスグループエンジニア採用サイト" class="--isSP" />
+				</a></h1>
+			<!-- /.header__siteTitleBox --></div>
+		
+			<nav class="globalNaviSmall">
+				<div id="globalNaviSmallIcon" class="globalNaviSmall__icon globalNaviSmall__icon--type01">
+					<div class="globalNaviSmall__iconButton">
+						<span class="iconButton--top"></span>
+						<span class="iconButton--middle"></span>
+						<span class="iconButton--bottom"></span>
+					</div>
+				</div>
+
+				<div class="modal micromodal-slide" id="modal-globalNaviSmall" aria-hidden="true">
+					<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				    		<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-globalNaviSmall-labelledby">
+
+							<div class="globalNaviSmall__menu" id="modal-globalNaviSmall-labelledby">
+								<div class="globalNaviSmall__menu__inner">
+									<div class="globalNaviSmall__siteTitle"><a href="index.html"><img src="img/common/siteTitle-b.png" alt="GENXgroupゲンクスグループエンジニア採用サイト" /></a></div>
+									<ul class="globalNaviSmall__menu__main">
+										<li><a href="<?php echo home_url(); ?>/entryform">ENTRY</a></li>
+										<li><a href="<?php echo home_url(); ?>">ホーム</a></li>
+										<li><a href="<?php echo home_url(); ?>/about-company">私たちについて</a></li>
+										<li><a href="<?php echo home_url(); ?>/about-service">事業紹介</a></li>
+										<li><a href="<?php echo home_url(); ?>/about-business">仕事内容</a></li>
+										<li><a href="<?php echo home_url(); ?>/interview">インタビュー</a></li>
+										<li><a href="<?php echo home_url(); ?>/company">会社概要</a></li>
+										<li><a href="<?php echo home_url(); ?>/about-recruit">採用情報</a></li>
+									</ul>
+									<ul class="globalNaviSmall__sns">
+											<li><a href="https://twitter.com/fukushimakenki" target="_blank"><img src="img/common/iconTwitter.png" alt="GENXgroupゲンクスグループ Twitter" /></a></li>
+											<li><a href="https://www.facebook.com/fukushimakenki/" target="_blank"><img src="img/common/iconFacebook.png" alt="GENXgroupゲンクスグループ Facebook" /></a></li>
+											<li><a href="https://www.instagram.com/fukushima_kenki/" target="_blank"><img src="img/common/iconInstagram.png" alt="GENXgroupゲンクスグループ Instagram" /></a></li>
+											<li><a href="https://note.com/fukushimakenki/" target="_blank"><img src="img/common/iconNote.png" alt="GENXgroupゲンクスグループ Note" /></a></li>
+									</ul>
+								<!-- /.globalNaviSmall__menu__inner --></div>
+							<!-- /.globalNaviSmall__menu --></div>
+
+				    		<!-- /.modal__container --></div>
+					<!-- /.modal__overlay --></div>
+				<!-- /#modal-globalNaviSmall --></div>
+
+
+		    <!-- /.globalNaviSmall --></nav>
+        <!-- /.header__headBox --></div>
+	<!-- /#header --></header>
+    
+    <section class="mainVisual">
+    	<div class="mainVisual__image">
+    			<img src="img/home/imgMainVisual.jpg" alt="GENXグループ新卒採用" class="mainVisual__pc" />
+    			<img src="img/home/imgMainVisual_sp.jpg" alt="GENXグループ新卒採用" class="mainVisual__sp" />
+    	<!-- /.mainVisual__image --></div>
+    	<div class="mainVisual__inner clearfix">
+		    	<h2 class="mainVisual__catch --typeScrollLine">極めるなら<br>大きなことを。</h2>
+	    <!-- /.mainVisual__inner --></div>
+		    	<div class="mainVisual__button">
+		    		<div class="inBase clearfix">
+		        	<ul>
+		        			<li><a href="https://job.mynavi.jp/24/pc/search/corp55481/outline.html" target="_blank"><small>NEW GRADUATE</small><span>新卒採用の方へ</span></a></li>
+		        			<li><a href="<?php echo home_url(); ?>/entryform"><small>HALFWAY</small><span>中途採用の方へ</span></a></li>
+		        	</ul>
+						<!-- /.inBase --></div>
+	    	<!-- /.mainVisual__button --></div>
+    <!-- /.mainVisual --></section>
+
+	
+	<div id="contents" class="clearfix">
+		<div class="inBase">
+			<p class="headSentence sM">タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル
+タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+		<!-- /.inBase --></div>
+
+	  <div class="homeAboutUsBox --bgType01 sM-xl">
+	  	<div class="inBase clearfix">
+	  		<figure class="homeAboutUsBox__image"><img src="img/home/imgTopHead.jpg" alt="私たちについて" /></figure>
+	  		<div class="homeAboutUsBox__inner">
+	  			<h3 class="homeAboutUsBox__title --typeScrollLine sM">機械いじりに興味を持つ<br>あなたなら、20tの重機を<br>扱うエンジニアになれる。</h3>
+	  			<p class="homeAboutUsBox__sentence sM">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+	  			<div class="button--type01 isBgReversal"><a href="<?php echo home_url(); ?>/about-company">私たちについて</a></div>
+				<!-- /.homeAboutUsBox__inner --></div>
+			<!-- /.inBase --></div>
+	  <!-- /.homeAboutUsBox --></div>
+
+
+
+	  <div class="homeAboutJobBox sM">
+	  	<div class="inBase clearfix">
+	  		<div class="homeAboutJobBox__inner">
+	  			<div class="title--type01" data-text="ENGINEER">
+	  				<span>GENXグループで働く</span>
+	  				<h3>エンジニアの仕事</h3>
+	  				<small>ENGINEER JOB</small>
+	  			<!-- /.title--type01 --></div>
+	  			<p class="homeAboutJobBox__title --typeScrollLine sM">建設機械を修理・メンテナンス。<br>技術?でお客様の?に光を。</p>
+	  			<p class="homeAboutJobBox__sentence">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				<!-- /.homeAboutJobBox__inner --></div>
+	  		<figure class="homeAboutJobBox__image">
+	  			<img src="img/home/imgEngineerJob.jpg" alt="エンジニアの仕事" class="--isPC" />
+	  			<img src="img/home/imgEngineerJob_sp.jpg" alt="エンジニアの仕事" class="--isSP" />
+	  		</figure>
+			<!-- /.inBase --></div>
+	  <!-- /.homeAboutJobBox --></div>
+
+
+	  <div class="homeWorkBox sM-xl">
+			<div class="inBase">
+			<div class="inBaseInnerBox02 --typeScrollFadeIn">
+				<div class="row sM">
+				    <div class="col-12 col-md-6 px-0">
+				    	<div class="homeWorkBox__button"><a href="#">
+				    		<figure class="homeWorkBox__image"><img src="img/home/imgWork01.jpg" alt="WORK1" /></figure>
+				    		<p class="homeWorkBox__number">WORK1</p>
+				    		<div class="homeWorkBox__buttonInner">
+				    			<h4 class="homeWorkBox__lead">修理するのは、建設現場で働く重機<br>街を支える縁の下の力持ち</h4>
+				    			<p class="homeWorkBox__sentence">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				    		<!-- /.homeWorkBox__buttonInner --></div>
+				    	</a><!-- /.homeWorkBox__button --></div>
+				    </div>
+				    <div class="col-12 col-md-6 px-0">
+				    	<div class="homeWorkBox__button isReversal"><a href="#">
+				    		<figure class="homeWorkBox__image"><img src="img/home/imgWork02.jpg" alt="WORK2" /></figure>
+				    		<p class="homeWorkBox__number">WORK2</p>
+				    		<div class="homeWorkBox__buttonInner">
+				    			<h4 class="homeWorkBox__lead">お困りごとは現場で直接聞いて解決<br>?具とともにお客様のもとへ</h4>
+				    			<p class="homeWorkBox__sentence">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				    		<!-- /.homeWorkBox__buttonInner --></div>
+				    	</a><!-- /.homeWorkBox__button --></div>
+				    </div>
+				    <div class="col-12 col-md-6 px-0">
+				    	<div class="homeWorkBox__button"><a href="#">
+				    		<figure class="homeWorkBox__image"><img src="img/home/imgWork03.jpg" alt="WORK3" /></figure>
+				    		<p class="homeWorkBox__number">WORK3</p>
+				    		<div class="homeWorkBox__buttonInner">
+				    			<h4 class="homeWorkBox__lead">建設機械の進化に合わせ<br>技術をレベルアップ</h4>
+				    			<p class="homeWorkBox__sentence">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				    		<!-- /.homeWorkBox__buttonInner --></div>
+				    	</a><!-- /.homeWorkBox__button --></div>
+				    </div>
+				    <div class="col-12 col-md-6 px-0">
+				    	<div class="homeWorkBox__button isReversal"><a href="#">
+				    		<figure class="homeWorkBox__image"><img src="img/home/imgWork04.jpg" alt="WORK4" /></figure>
+				    		<p class="homeWorkBox__number">WORK4</p>
+				    		<div class="homeWorkBox__buttonInner">
+				    			<h4 class="homeWorkBox__lead">代わりがいない唯?無?の技術者に<br>現場を助けるHEROになる</h4>
+				    			<p class="homeWorkBox__sentence">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+				    		<!-- /.homeWorkBox__buttonInner --></div>
+				    	</a><!-- /.homeWorkBox__button --></div>
+				    </div>
+				<!-- /.row --></div>
+				<div class="button--type01"><a href="<?php echo home_url(); ?>/about-business">仕事内容について見る</a></div>
+			<!-- /.inBaseInnerBox02 --></div>
+			<!-- /.inBase --></div>
+	  <!-- /.homeWorkBox --></div>
+
+	  <div class="homeInterviewBox">
+	  	<div class="inBase clearfix">
+	  		<div class="title--type01" data-text="ENGINEER">
+	  			<span>GENXグループで働く</span>
+	  			<h3>エンジニアインタビュー</h3>
+	  			<small>INTERVIEW ENGINEER</small>
+	  		<!-- /.title--type01 --></div>
+	  		<div class="homeInterviewBox__inner sM">
+	    					<!--スライダー Slider全体のコンテナ -->
+								<div class="swiper --typeContentsSliderSp">
+								      	<!-- Sliderの内包コンテナ -->
+								      	<div class="swiper-wrapper sP-xl sP-pc">
+									        <!-- Slideさせたいコンテンツ -->
+
+													<div class="swiper-slide">
+						            		<div class="homeInterviewBox__content clearfix"><a href="#">
+						            			<figure class="sM-s"><img src="img/home/imgInterview01.jpg" alt="エンジニアインタビュー" /></figure>
+						            			<dl>
+						            				<dt>ほぼ未経験からエンジニアに。自分にできることが増えたときは、成長を実感できます。</dt>
+						            				<dd>
+						            					<small class="sM-s">2022年中途入社（ 1年目）</small>
+						            					<p>吉田睦</p>
+						            				</dd>
+						            			</dl>
+						            		</a><!-- /.homeInterviewBox__content --></div>
+													<!-- /.swiper-slide --></div>
+
+													<div class="swiper-slide">
+						            		<div class="homeInterviewBox__content clearfix"><a href="#">
+						            			<figure class="sM-s"><img src="img/home/imgInterview01.jpg" alt="エンジニアインタビュー" /></figure>
+						            			<dl>
+						            				<dt>ほぼ未経験からエンジニアに。自分にできることが増えたときは、成長を実感できます。</dt>
+						            				<dd>
+						            					<small class="sM-s">2022年中途入社（ 1年目）</small>
+						            					<p>吉田睦</p>
+						            				</dd>
+						            			</dl>
+						            		</a><!-- /.homeInterviewBox__content --></div>
+													<!-- /.swiper-slide --></div>
+
+													<div class="swiper-slide">
+						            		<div class="homeInterviewBox__content clearfix"><a href="#">
+						            			<figure class="sM-s"><img src="img/home/imgInterview01.jpg" alt="エンジニアインタビュー" /></figure>
+						            			<dl>
+						            				<dt>ほぼ未経験からエンジニアに。自分にできることが増えたときは、成長を実感できます。</dt>
+						            				<dd>
+						            					<small class="sM-s">2022年中途入社（ 1年目）</small>
+						            					<p>吉田睦</p>
+						            				</dd>
+						            			</dl>
+						            		</a><!-- /.homeInterviewBox__content --></div>
+													<!-- /.swiper-slide --></div>
+
+													<div class="swiper-slide">
+						            		<div class="homeInterviewBox__content clearfix"><a href="#">
+						            			<figure class="sM-s"><img src="img/home/imgInterview01.jpg" alt="エンジニアインタビュー" /></figure>
+						            			<dl>
+						            				<dt>ほぼ未経験からエンジニアに。自分にできることが増えたときは、成長を実感できます。</dt>
+						            				<dd>
+						            					<small class="sM-s">2022年中途入社（ 1年目）</small>
+						            					<p>吉田睦</p>
+						            				</dd>
+						            			</dl>
+						            		</a><!-- /.homeInterviewBox__content --></div>
+													<!-- /.swiper-slide --></div>
+
+													<div class="swiper-slide">
+						            		<div class="homeInterviewBox__content clearfix"><a href="#">
+						            			<figure class="sM-s"><img src="img/home/imgInterview01.jpg" alt="エンジニアインタビュー" /></figure>
+						            			<dl>
+						            				<dt class="sM-s">ほぼ未経験からエンジニアに。自分にできることが増えたときは、成長を実感できます。</dt>
+						            				<dd>
+						            					<small class="sM-s">2022年中途入社（ 1年目）</small>
+						            					<p>吉田睦</p>
+						            				</dd>
+						            			</dl>
+						            		</a><!-- /.homeInterviewBox__content --></div>
+													<!-- /.swiper-slide --></div>
+
+								      	</div><!-- /swiper-wrapper -->
+								      	
+								      	<!-- ナビゲーションボタン（※省略可） -->
+								      	<!--<div class="swiper-button-prev--typeContentsSliderSp"></div>
+								      	<div class="swiper-button-next--typeContentsSliderSp"></div>-->
+								</div><!-- /swiper -->
+								<!--スライダー  Sliderここまで -->
+				<!-- /.homeInterviewBox__inner --></div>
+				<div class="button--type01 tR-pc sM-xl"><a href="<?php echo home_url(); ?>/interview">インタビュー一覧を見る</a></div>
+			<!-- /.inBase --></div>
+	  <!-- /.homeInterviewBox --></div>
+
+
+	  <div class="homeTestimonalBox">
+	  	<div class="inBase clearfix">
+	  		<div class="homeTestimonalBox__title" data-text="TESTIMONIAL">
+	  			<h3>利用者様のご感想</h3>
+	  			<small>TESTIMONIAL</small>
+	  		<!-- /.homeTestimonalBox--title --></div>
+	  		<div class="homeTestimonalBox__inner">
+
+
+				  <div class="card01 l-section">
+				  <div class="l-inner">
+				 
+				    <div class="swiper-area">
+				      <div class="swiper">
+				        <div class="swiper-wrapper">
+
+				          <div class="swiper-slide">
+				            <article class="slide">
+				              <div class="slide-content">
+				                <div class="homeTestimonalBox__content clearfix">
+				                  <figure class="homeTestimonalBox__image sM-s"><img src="img/home/imgTestimonial01.jpg" alt="利用者様のご感想" /></figure>
+				                  <h4 class="homeTestimonalBox__contentTitle sM-s">テキストテキストテキストテキストテキストテキスト</h4>
+				                  <p class="homeTestimonalBox__sentence">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス</p>
+				                <!-- /.homeTestimonalBox__content --></div>
+				              </div>
+				            </article>
+				          </div>
+
+				          <div class="swiper-slide">
+				            <article class="slide">
+				              <div class="slide-content">
+				                <div class="homeTestimonalBox__content clearfix">
+				                  <figure class="homeTestimonalBox__image sM-s"><img src="img/home/imgTestimonial02.jpg" alt="利用者様のご感想" /></figure>
+				                  <h4 class="homeTestimonalBox__contentTitle sM-s">テキストテキストテキストテキストテキストテキスト</h4>
+				                  <p class="homeTestimonalBox__sentence">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス</p>
+				                <!-- /.homeTestimonalBox__content --></div>
+				              </div>
+				            </article>
+				          </div>
+
+				          <div class="swiper-slide">
+				            <article class="slide">
+				              <div class="slide-content">
+				                <div class="homeTestimonalBox__content clearfix">
+				                  <figure class="homeTestimonalBox__image sM-s"><img src="img/home/imgTestimonial01.jpg" alt="利用者様のご感想" /></figure>
+				                  <h4 class="homeTestimonalBox__contentTitle sM-s">テキストテキストテキストテキストテキストテキスト</h4>
+				                  <p class="homeTestimonalBox__sentence">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス</p>
+				                <!-- /.homeTestimonalBox__content --></div>
+				              </div>
+				            </article>
+				          </div>
+
+				          <div class="swiper-slide">
+				            <article class="slide">
+				              <div class="slide-content">
+				                <div class="homeTestimonalBox__content clearfix">
+				                  <figure class="homeTestimonalBox__image sM-s"><img src="img/home/imgTestimonial02.jpg" alt="利用者様のご感想" /></figure>
+				                  <h4 class="homeTestimonalBox__contentTitle sM-s">テキストテキストテキストテキストテキストテキスト</h4>
+				                  <p class="homeTestimonalBox__sentence">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス</p>
+				                <!-- /.homeTestimonalBox__content --></div>
+				              </div>
+				            </article>
+				          </div>
+
+				          <div class="swiper-slide">
+				            <article class="slide">
+				              <div class="slide-content">
+				                <div class="homeTestimonalBox__content clearfix">
+				                  <figure class="homeTestimonalBox__image sM-s"><img src="img/home/imgTestimonial02.jpg" alt="利用者様のご感想" /></figure>
+				                  <h4 class="homeTestimonalBox__contentTitle sM-s">テキストテキストテキストテキストテキストテキスト</h4>
+				                  <p class="homeTestimonalBox__sentence">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキス</p>
+				                <!-- /.homeTestimonalBox__content --></div>
+				              </div>
+				            </article>
+				          </div>
+
+				        </div><!-- /swiper-wrapper -->
+				      </div><!-- /swiper -->
+				    </div><!-- /swiper-area -->
+				      <div class="swiper-button-prev"></div>
+				      <div class="swiper-button-next"></div>
+				    <!-- <div class="swiper-pagination"></div>-->
+				 
+				  </div>
+				</div>
+
+
+				<!-- /.homeTestimonalBox__inner --></div>
+			<!-- /.inBase --></div>
+	  <!-- /.homeTestimonalBox --></div>
+
+	  <div class="homeToYouBox --bgType01 sM-l"><div class="inBase clearfix">
+	  	<div class="homeToYouBox__title sM"><h3><small>GENXグループの</small><span class="--type01">仕事</span>に<span class="--type02">興味</span>の持った<span>あなた</span>へ</h3></div>
+	  	<div class="inBaseInnerBox">
+	  		<div class="homeToYouBox__contentTitle --typeScrollLine"><i>1.</i><h4>重機を扱うことは<b><span class="--type01">”</span>楽しい<span class="--type02">”</span></b></h4></div>
+	  		<p class="tC-pc sM"><b>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>テキストテキストテキストテキストテキストテキストテキスト</b></p>
+	  		<h5 class="homeToYouBox__lead sM">エンジニアの仕事を比べてみました！</h5>
+	  		<div class="homeToYouBox__comparisonBox sM-xl">
+	  			<!--<table class="homeToYouBox__comparisonTable">
+	  				<tr class="tableHead">
+	  					<th><small>GENXグループの</small><b>重機エンジニア</b></th>
+	  					<th class="itemTitle"></th>
+	  					<th><small>車の</small><b>エンジニア</b></th>
+	  				</tr>
+	  				<tr>
+	  					<td>テキストテキストテキストテキストテキストテキストテキストテキスト</td>
+	  					<th class="itemTitle"><span>整備対象</span></th>
+	  					<td>テキストテキストテキストテキストテキストテキストテキストテキスト</td>
+	  				</tr>
+	  				<tr>
+	  					<td>テキストテキストテキストテキストテキストテキストテキストテキスト</td>
+	  					<th class="itemTitle"><span>仕事場所</span></th>
+	  					<td>テキストテキストテキストテキストテキストテキストテキストテキスト</td>
+	  				</tr>
+	  				<tr>
+	  					<td>テキストテキストテキストテキストテキストテキストテキストテキスト</td>
+	  					<th class="itemTitle"><span>お客様との距離</span></th>
+	  					<td>テキストテキストテキストテキストテキストテキストテキストテキスト</td>
+	  				</tr>
+	  				<tr>
+	  					<td>機械の不具合を現場で診断<br>修理を行うため技術力が試される</td>
+	  					<th class="itemTitle"><span>仕事内容</span></th>
+	  					<td>取付や交換など単純な作業</td>
+	  				</tr>
+	  			</table>-->
+
+	  			<div class="homeToYouBox__comparisonGraph">
+	  				<ul>
+	  					<li><small>GENXグループの</small><b>重機エンジニア</b></li>
+	  					<li><small>車の</small><b>エンジニア</b></li>
+	  				</ul>
+	  				<dl>
+	  					<dt>整備対象</dt>
+	  					<dd>
+	  						<p>建設現場を支える、重機40tを超えるものも</p>
+	  						<p>新車、中古車といった自動車</p>
+	  					</dd>
+	  				</dl>
+	  				<dl>
+	  					<dt>仕事場所</dt>
+	  					<dd>
+	  						<p>建設現場に直接赴いて修理</p>
+	  						<p>工場での作業が主</p>
+	  					</dd>
+	  				</dl>
+	  				<dl>
+	  					<dt>お客様との距離</dt>
+	  					<dd>
+	  						<p>現場でお客様と直接コミュニケーションをとります</p>
+	  						<p>整備中のコミュニケーションはほとんどなし</p>
+	  					</dd>
+	  				</dl>
+	  				<dl>
+	  					<dt>仕事内容</dt>
+	  					<dd>
+	  						<p>全く同じ現場や作業はほとんどありません</p>
+	  						<p>取付や交換といったある程度単純化された作業</p>
+	  					</dd>
+	  				</dl>
+	  			<!-- /.homeToYouBox__comparisonGraph --></div>
+
+
+	  		<!-- /.homeToYouBox__comparisonBox --></div>
+
+
+	  		<div class="homeToYouBox__contentTitle --typeScrollLine"><i>2.</i><h4>専門資格は不要！<b><span class="--type01">”</span>未経験歓迎<span class="--type02">”</span></b></h4></div>
+	  		<p class="tC-pc sM-l"><b>チーム連携によって、短期間で成長できる環境が2021年に整いました。</b></p>
+	  	<!-- /.inBaseInnerBox --></div>
+
+	  	<div class="homeToYouBox__system sM-l">
+	  		<figure class="homeToYouBox__systemImage --typeScrollFadeIn"><img src="img/home/imgGenxGroup01.jpg" alt="44年積み上げてきた万全の研修体制" /></figure>
+	  		<dl class="homeToYouBox__systemContent">
+	  			<dt class="homeToYouBox__systemTitle sM-s">未経験でもエンジニアになれる！<br>44年積み上げてきた万全の研修体制<br>が技術や経験の不?を補います。</dt>
+	  			<dd class="homeToYouBox__systemSententce">営業志望でもエンジニアになれる。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+	  		</dl>
+	  	<!-- /.homeToYouBox__system --></div>
+
+	  	<div class="homeToYouBox__system isBgReversal sM-l">
+	  		<figure class="homeToYouBox__systemImage --typeScrollFadeIn"><img src="img/home/imgGenxGroup02.jpg" alt="技術チーム全体が連携した育成体制" /></figure>
+	  		<dl class="homeToYouBox__systemContent">
+	  			<dt class="homeToYouBox__systemTitle sM-s">技術チーム全体が連携した<br>育成体制</dt>
+	  			<dd class="homeToYouBox__systemSententce">営業志望でもエンジニアになれる。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+	  		</dl>
+	  	<!-- /.homeToYouBox__system --></div>
+
+	  	<div class="row">
+			    <div class="col-6 col-md-4 sM">
+			    	<div class="button--type02"><a href="<?php echo home_url(); ?>/about-recruit/in-house-systems">
+			    		<figure><img src="img/home/iconSystem.png" alt="福利厚生・制度" /></figure>
+			    		<p>福利厚生・制度</p>
+			    	</a></div>
+			    </div>
+			    <div class="col-6 col-md-4 sM">
+			    	<div class="button--type02"><a href="<?php echo home_url(); ?>/about-recruit/question">
+			    		<figure><img src="img/home/iconQuestion.png" alt="よくあるご質問" /></figure>
+			    		<p>よくあるご質問</p>
+			    	</a></div>
+			    </div>
+			    <div class="col-12 col-md-4 sM">
+			    	<div class="button--type02"><a href="<?php echo home_url(); ?>/about-recruit/to-guardians">
+			    		<figure><img src="img/home/iconParents.png" alt="就活生を応援する保護者の方へ" /></figure>
+			    		<p>就活生を応援する<br class="hidden-sp">保護者の方へ</p>
+			    	</a></div>
+			    </div>
+			<!-- /.row --></div>
+	 <!-- /.inBase --></div><!-- /.homeToYouBox --></div>
+
+	  <div class="contentContactBox sM"><div class="inBase clearfix">
+	  	<div class="inBaseInnerBox">
+	  		<div class="contentContactBox__title sM-l"><h4>エントリーはこちら</h4><small>ENTRY</small><!-- /.contentContactBox__title --></div>
+				<div class="inBaseInnerBox">
+			  	<div class="row">
+					    <div class="col-12 col-md-6 sM">
+					    	<div class="contentContactBox__button"><a href="https://job.mynavi.jp/24/pc/search/corp55481/outline.html" target="_blank">
+					    		<small>NEW GRADUATE</small><span>新卒の方</span>
+					    	</a></div>
+					    </div>
+					    <div class="col-12 col-md-6 sM-l">
+					    	<div class="contentContactBox__button --type02"><a href="<?php echo home_url(); ?>/entryform">
+					    		<small>HALFWAY</small><span>中途の方</span>
+					    	</a></div>
+					    </div>
+					<!-- /.row --></div>
+				<!-- /.inBaseInnerBox --></div>
+	  	<!-- /.inBaseInnerBox --></div>
+	  <!-- /.inBase --></div><!-- /.homeToYouBox --></div>
+
+
+<div class="homeActivityBox --bgType01">
+	<div class="inBase clearfix">
+		<div class="homeActivityBox__title">
+			<h3>活動を知る</h3><small>KNOW THE ACTIVITY</small>
+		<!-- /.homeActivityBox__title --></div>
+	<!-- /.inBase --></div>
+
+	<div class="inBase">
+		<div class="inBaseInnerBox">
+				<div class="title--type02 sM tR-pc"><h4>採用ブログ</h4></div>
+		<!-- /.inBaseInnerBox --></div>
+	<!-- /.inBase --></div>
+
+	<div class="homeBlogBox --typeExtendsBeyondSlider sM-xl">
+        
+	<div class="card02 l-section">
+	  <div class="l-inner">
+
+	    <div class="swiper">
+	      <div class="swiper-wrapper">
+	        <a href="#" class="swiper-slide">
+	          <article class="slide">
+	            <div class="slide-media img-cover"><img src="img/home/imgVoicePerson01.jpg" alt=""></div>
+	            <div class="slide-content">
+	              <time class="slide-date" datetime="2022-12-01">2022.12.01</time>
+	              <div class="slide-title">タイトルタイトル タイトル タイトル タイトル タイトル タイトル タイトル タイトル  </div>
+	            </div>
+	          </article>
+	        </a>
+	        <a href="#" class="swiper-slide">
+	          <article class="slide">
+	            <div class="slide-media img-cover"><img src="img/home/imgVoicePerson02.jpg" alt=""></div>
+	            <div class="slide-content">
+	              <time class="slide-date" datetime="2022-12-01">2022.12.01</time>
+	              <div class="slide-title">タイトルタイトル タイトル タイトル タイトル タイトル</div>
+	            </div>
+	          </article>
+	        </a>
+	        <a href="#" class="swiper-slide">
+	          <article class="slide">
+	            <div class="slide-media img-cover"><img src="img/home/imgVoicePerson03.jpg" alt=""></div>
+	            <div class="slide-content">
+	              <time class="slide-date" datetime="2022-12-01">2022.12.01</time>
+	              <div class="slide-title">タイトルタイトル タイトル タイトル タイトル タイトル タイトル タイトル タイトル  タイトル タイトル タイトル タイトル</div>
+	            </div>
+	          </article>
+	        </a>
+	        <a href="#" class="swiper-slide">
+	          <article class="slide">
+	            <div class="slide-media img-cover"><img src="img/home/imgVoicePerson04.jpg" alt=""></div>
+	            <div class="slide-content">
+	              <time class="slide-date" datetime="2022-12-01">2022.12.01</time>
+	              <div class="slide-title">タイトルタイトル タイトル タイトル タイトル</div>
+	            </div>
+	          </article>
+	        </a>
+	        <a href="#" class="swiper-slide">
+	          <article class="slide">
+	            <div class="slide-media img-cover"><img src="img/home/imgVoicePerson05.jpg" alt=""></div>
+	            <div class="slide-content">
+	              <time class="slide-date" datetime="2022-12-01">2022.12.01</time>
+	              <div class="slide-title">タイトルタイトル タイトル タイトル タイトル タイトル タイトル タイトル タイトル  タイトル タイトル タイトル タイトル</div>
+	            </div>
+	          </article>
+	        </a>
+	      </div><!-- /swiper-wrapper -->
+
+	      <div class="swiper-controller">
+	        <!--<div class="swiper-pagination"></div> -->
+	        <div class="swiper-button-prev"></div>
+	        <div class="swiper-button-next"></div>
+	      </div>
+	    </div><!-- /swiper -->
+
+		  </div><!-- /l-inner -->
+		</div><!-- /card02 -->
+
+
+ 	<!-- /.typeExtendsBeyondSlider --></div>
+
+	<div class="button--type01 isBgReversal tC sM-l hidden-pc"><a href="p_blog">ブログ一覧</a></div>
+
+
+
+
+	<div class="inBase">
+		<div class="inBaseInnerBox">
+				<div class="title--type02 sM tR-pc"><h4>ソーシャルメディア</h4></div>
+		<!-- /.inBaseInnerBox --></div>
+
+			<div class="snsBox">
+		        <div class="row">
+		            <div class="col-12 col-sm-6 sM-l">
+		    			<div class="snsBox__content">
+		    				<div class="snsBox__head sM">
+		    					<dl>
+		    						<dt><img src="img/common/iconTwitter.png" alt="GENXgroupゲンクスグループ Twitter" /></dt>
+		    						<dd>
+		    							<p>Twitter</p>
+		    							<small>@fukushimakenki</small>
+		    						</dd>
+		    					</dl>
+		    					<div class="snsBox__button --typeTwitter">
+		    						<a href="https://twitter.com/fukushimakenki" target="_blank">フォローする</a>
+		    					<!-- /.snsBox__button --></div>
+		    				<!-- /.snsBox__head --></div>
+		    				<div class="snsBox__twitter">
+								<a class="twitter-timeline" href="https://twitter.com/fukushimakenki?ref_src=twsrc%5Etfw">Tweets by fukushimakenki</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+							<!-- /.nsBox__twitter --></div>
+		            	<!-- /.snsBox__content --></div>
+		            </div>
+
+
+		            <div class="col-12 col-sm-6 offset-sm-3 sM snsBox--sp">
+		    			<div class="snsBox__content">
+		    				<div class="snsBox__head sM">
+		    					<dl>
+		    						<dt><img src="img/common/iconInstagram.png" alt="GENXgroupゲンクスグループ Instagram" /></dt>
+		    						<dd>
+		    							<p>Instagram</p>
+		    							<small>fukushima_kenki</small>
+		    						</dd>
+		    					</dl>
+		    					<div class="snsBox__button --typeInstagram">
+		    						<a href="https://www.instagram.com/fukushima_kenki/" target="_blank">フォローする</a>
+		    					<!-- /.snsBox__button --></div>
+		    				<!-- /.snsBox__head --></div>
+		            	<!-- /.snsBox__content --></div>
+		            </div>
+		            <div class="col-12 sM-l snsBox--sp">
+		    			<div class="snsBox__content">
+		    				<div class="snsBox__instagram">
+		    					<div class="snsBox__instagramImage"><a href="https://www.instagram.com/fukushima_kenki/" target="_blank"><img src="img/home/imgInstagram00.jpg" alt="GENXgroupゲンクスグループ Instagram" /></a></div>
+		    					<div class="snsBox__instagramImage"><a href="https://www.instagram.com/fukushima_kenki/" target="_blank"><img src="img/home/imgInstagram00.jpg" alt="GENXgroupゲンクスグループ Instagram" /></a></div>
+		    					<div class="snsBox__instagramImage"><a href="https://www.instagram.com/fukushima_kenki/" target="_blank"><img src="img/home/imgInstagram00.jpg" alt="GENXgroupゲンクスグループ Instagram" /></a></div>
+		    					<div class="snsBox__instagramImage"><a href="https://www.instagram.com/fukushima_kenki/" target="_blank"><img src="img/home/imgInstagram00.jpg" alt="GENXgroupゲンクスグループ Instagram" /></a></div>
+		    					<div class="snsBox__instagramImage"><a href="https://www.instagram.com/fukushima_kenki/" target="_blank"><img src="img/home/imgInstagram00.jpg" alt="GENXgroupゲンクスグループ Instagram" /></a></div>
+		    				<!-- /.snsBox__instagram --></div>
+		            	<!-- /.snsBox__content --></div>
+		            </div>
+
+
+
+
+
+
+
+
+
+
+		        <div class="col-12 col-sm-6 sM-l">
+		    			<div class="snsBox__content">
+		    				<div class="snsBox__head sM">
+		    					<dl>
+		    						<dt><img src="img/common/iconFacebook.png" alt="GENXgroupゲンクスグループ Facebook" /></dt>
+		    						<dd>
+		    							<p>Facebook</p>
+		    							<small>@fukushimakenki</small>
+		    						</dd>
+		    					</dl>
+		    					<div class="snsBox__button --typeFacebook">
+		    						<a href="https://www.facebook.com/fukushimakenki/" target="_blank">フォローする</a>
+		    					<!-- /.snsBox__button --></div>
+		    				<!-- /.snsBox__head --></div>
+
+		    				<div class="snsBox__facebook">
+								<div class="fb-page" data-href="https://www.facebook.com/fukushimakenki/" data-tabs="timeline" data-width="1000" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/fukushimakenki/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/fukushimakenki/">福島建機株式会社</a></blockquote></div>
+		    				<!-- /.snsBox__facebook --></div>
+
+		            	<!-- /.snsBox__content --></div>
+		            </div>
+
+		            <div class="col-12 col-sm-6 offset-sm-3 sM snsBox--pc">
+		    			<div class="snsBox__content">
+		    				<div class="snsBox__head sM">
+		    					<dl>
+		    						<dt><img src="img/common/iconInstagram.png" alt="GENXgroupゲンクスグループ Instagram" /></dt>
+		    						<dd>
+		    							<p>Instagram</p>
+		    							<small>fukushima_kenki</small>
+		    						</dd>
+		    					</dl>
+		    					<div class="snsBox__button --typeInstagram">
+		    						<a href="https://www.instagram.com/fukushima_kenki/" target="_blank">フォローする</a>
+		    					<!-- /.snsBox__button --></div>
+		    				<!-- /.snsBox__head --></div>
+		            	<!-- /.snsBox__content --></div>
+		            </div>
+		            <div class="col-12 sM-l snsBox--pc">
+		    			<div class="snsBox__content">
+		    				<div class="snsBox__instagram">
+		    					<div class="snsBox__instagramImage"><a href="https://www.instagram.com/fukushima_kenki/" target="_blank"><img src="img/home/imgInstagram00.jpg" alt="GENXgroupゲンクスグループ Instagram" /></a></div>
+		    					<div class="snsBox__instagramImage"><a href="https://www.instagram.com/fukushima_kenki/" target="_blank"><img src="img/home/imgInstagram00.jpg" alt="GENXgroupゲンクスグループ Instagram" /></a></div>
+		    					<div class="snsBox__instagramImage"><a href="https://www.instagram.com/fukushima_kenki/" target="_blank"><img src="img/home/imgInstagram00.jpg" alt="GENXgroupゲンクスグループ Instagram" /></a></div>
+		    					<div class="snsBox__instagramImage"><a href="https://www.instagram.com/fukushima_kenki/" target="_blank"><img src="img/home/imgInstagram00.jpg" alt="GENXgroupゲンクスグループ Instagram" /></a></div>
+		    					<div class="snsBox__instagramImage"><a href="https://www.instagram.com/fukushima_kenki/" target="_blank"><img src="img/home/imgInstagram00.jpg" alt="GENXgroupゲンクスグループ Instagram" /></a></div>
+		    				<!-- /.snsBox__instagram --></div>
+		            	<!-- /.snsBox__content --></div>
+		            </div>
+		        </div>
+		    <!-- /.snsBox --></div>
+
+		<!-- /.inBase --></div>
+<!-- /.--bgType01 --></div>
+
+
+		<div class="homeCompanyBox">
+			<div class="inBase clearfix">
+				<div class="homeCompanyBox__title sM-l"><h3>会社概要</h3><small>COMPANY</small></div>
+				<div class="homeCompanyBox__inner">
+	            <div class="row">
+	            	<div class="col-12 col-sm-6 sM-l">
+	            		<div class="homeCompanyBox__nameBox">
+		            		<p class="homeCompanyBox__name01 sM-s"><img src="img/common/imgGroupLogo.svg" alt="GENXgroupゲンクスグループ" /></p>
+		            		<ul class="homeCompanyBox__name02 sM-s clearfix">
+		            			<li>
+		            				<figure><img src="img/home/imgKenkiLogo.png" alt="福島建機株式会社" /></figure>
+		            				<p>福島建機株式会社</p>
+		            			</li>
+		            			<li>
+		            				<figure><img src="img/home/imgGenxLogo.png" alt="株式会社GENX" /></figure>
+		            				<p>株式会社GENX</p>
+		            			</li>
+		            		</ul>
+		    					<!-- /.homeCompanyBox__nameBox --></div>
+	            		<p class="homeCompanyBox__sentence sM-s">
+	            			〒963-0534　福島県郡山市日和田町日向1-1 GENspace<br>
+							TEL：024-954-8075<br>
+							営業時間：8:30-17:30<br>
+							定休日：土日
+	            		</p>
+	            		<ul class="homeCompanyBox__button --pc">
+	            			<li><a href="company">会社概要</a></li>
+	            			<li><a href="https://fukushimakenki.jp/">コーポレートサイトへ</a></li>
+	            		</ul>
+	            	</div>
+	            	<div class="col-12 col-sm-6 sM-l">
+	            		<div class="homeCompanyBox__image">
+	            			<figure><img src="img/home/imgCompanyButton.jpg" alt="株式会社GENXゲンクス外観" class="wide" /></figure>
+	            		<!-- /.homeCompanyBox__image --></div>
+	            	</div>
+	            </div>
+
+	          <ul class="homeCompanyBox__button --sp">
+	            <li><a href="https://fukushimakenki.jp/">コーポレートサイト</a></li>
+	          </ul>
+
+				<!-- /.homeCompanyBox__inner --></div>
+			<!-- /.inBase --></div>
+		<!-- /.homeCompanyBox --></div>
+
+	<!-- /#contents --></div>
+
+
+		<div class="wideMapBox">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12670.364680598715!2d140.3920278!3d37.4467617!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x46990dbf26b05ff1!2z56aP5bO25bu65qmf77yI5qCq77yJ5pys56S-!5e0!3m2!1sja!2sjp!4v1672551326357!5m2!1sja!2sjp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		<!-- /.wideMapBox --></div>
+
+	<footer id="footer">
+		<div class="footer__image sM-l">
+			<figure><img src="img/common/imgCompanyButton01.jpg" alt="GENXgroupゲンクスグループ" /></figure>
+			<figure><img src="img/common/imgCompanyButton02.jpg" alt="GENXgroupゲンクスグループ" /></figure>
+			<figure><img src="img/common/imgCompanyButton03.jpg" alt="GENXgroupゲンクスグループ" /></figure>
+			<figure><img src="img/common/imgCompanyButton04.jpg" alt="GENXgroupゲンクスグループ" /></figure>
+			<figure><img src="img/common/imgCompanyButton05.jpg" alt="GENXgroupゲンクスグループ" /></figure>
+		<!-- /.footer__image --></div>
+
+		<div class="inBase clearfix sM">
+        	<div class="row">
+            	<div class="col-12 col-sm-3">
+				
+                    <div class="accordionBox--type01">
+                        <!--項目ここから-->
+                        <div class="accordion--type01">
+                            <input type="checkbox" class="accordion--type01__check" id="accordion--type01__label001" />
+                            <label for="accordion--type01__label001">私たちについて</label>
+                            <div class="accordion--type01__content">
+                                <!--隠す中身ここから-->
+									           		<dl class="footer__link">
+																	<dt><a href="<?php echo home_url(); ?>/about-company">私たちについて</a></dt>
+																	<dd><a href="<?php echo home_url(); ?>/about-company/about-group">GENXグループについて</a></dd>
+																	<dd><a href="<?php echo home_url(); ?>/about-company/treasure">私たちが大切にしていること</a></dd>
+																	<dd><a href="<?php echo home_url(); ?>/about-company/message">代表メッセージ</a></dd>
+									           		</dl>
+                                <!--隠す中身ここまで-->
+                            <!--//.accordion--type01__content--></div>
+                        <!--//.accordion--type01--></div>
+                        <!--//項目ここまで-->
+
+                        
+	           		<dl class="footer__link --type02">
+						<dt><a href="<?php echo home_url(); ?>/about-service">事業紹介</a></dt>
+					</dl>
+                    <!--//.accordionBox--></div>
+
+                <!-- /.col --></div>
+            	<div class="col-12 col-sm-3">
+	           		<dl class="footer__link --type02">
+						<dt><a href="<?php echo home_url(); ?>/about-business">仕事内容</a></dt>
+					</dl>
+	           		<dl class="footer__link --type02">
+						<dt><a href="<?php echo home_url(); ?>/interview">インタビュー</a></dt>
+					</dl>
+	           		<dl class="footer__link --type02">
+						<dt><a href="<?php echo home_url(); ?>/company">会社概要</a></dt>
+					</dl>
+                <!-- /.col --></div>
+            	<div class="col-12 col-sm-3">
+				
+                    <div class="accordionBox--type01">
+                        <!--項目ここから-->
+                        <div class="accordion--type01">
+                            <input type="checkbox" class="accordion--type01__check" id="accordion--type01__label002" />
+                            <label for="accordion--type01__label002">採用情報</label>
+                            <div class="accordion--type01__content">
+                                <!--隠す中身ここから-->
+									           		<dl class="footer__link">
+																	<dt><a href="<?php echo home_url(); ?>/about-recruit">採用情報</a></dt>
+																	<dd><a href="<?php echo home_url(); ?>/about-recruit/job-description">募集要項</a></dd>
+																	<dd><a href="<?php echo home_url(); ?>/about-recruit/in-house-systems">福利厚生・社内制度</a></dd>
+																	<dd><a href="<?php echo home_url(); ?>/about-recruit/to-guardians">就活生を応援する保護者の方へ</a></dd>
+																	<dd><a href="<?php echo home_url(); ?>/about-recruit/question">よくあるご質問</a></dd>
+																</dl>
+                                <!--隠す中身ここまで-->
+                            <!--//.accordion--type01__content--></div>
+                        <!--//.accordion--type01--></div>
+                        <!--//項目ここまで-->
+                    <!--//.accordionBox--></div>
+
+
+	           		
+                <!-- /.col --></div>
+            	<div class="col-12 col-sm-3">
+	           		<dl class="footer__link --type02">
+						<dt><a href="<?php echo home_url(); ?>/entryform">エントリーフォーム</a></dt>
+					</dl>
+	           		<dl class="footer__link --type02">
+						<dt><a href="<?php echo home_url(); ?>/blog">採用ブログ</a></dt>
+					</dl>
+	           		<dl class="footer__link --type02">
+						<dt><a href="<?php echo home_url(); ?>/news">採用に関するお知らせ</a></dt>
+					</dl>
+	           		<dl class="footer__link --type02">
+						<dt><a href="<?php echo home_url(); ?>/privacy-policy">プライバシーポリシー</a></dt>
+					</dl>
+                <!-- /.col --></div>
+            <!-- /.row --></div>
+		<!-- /.inBase --></div>
+
+		<div class="inBase clearfix">
+			<small class="copyright">Copyright &copy; 福島建機株式会社. All Rights Reserved.</small>
+		<!-- /.inBase --></div>
+	<!-- /#footer --></footer>
+        
+	<p id="btnRise"><a href="#wrapper"><i class="icon-chevron-up"></i><span>ページ上部に戻る</span></a></p>
+	  
+	<div id="btnTelEmpty"></div>
+    
+    <div id="btnPageBottom">
+        <div class="btnPageBottom--btn">
+        	<ul>
+        			<li><a href="https://job.mynavi.jp/24/pc/search/corp55481/outline.html" target="_blank"><small>NEW GRADUATE</small><span>新卒に応募する</span></a></li>
+        			<li><a href="<?php echo home_url(); ?>/entryform"><small>HALFWAY</small><span>中途採用の方へ</span></a></li>
+        	</ul>
+        <!-- /.btnPageBottom--btn --></div>
+    <!-- /#btnPageBottom --></div>
+<!-- /#wrapper --></div>
+</body>
+</html>
+
+<script data-main="js/main" src="js/require.js"></script>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v15.0" nonce="4XzWFMPP"></script>
